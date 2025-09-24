@@ -44,6 +44,10 @@ dependencies {
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
 
+    //Dagger Hilt
+    implementation(libs.daggerHilt)
+    ksp(libs.daggerHilt.compiler)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
