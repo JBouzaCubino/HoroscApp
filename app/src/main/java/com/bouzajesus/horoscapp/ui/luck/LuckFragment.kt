@@ -5,13 +5,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.bouzajesus.horoscapp.R
+import androidx.fragment.app.viewModels
 import com.bouzajesus.horoscapp.databinding.FragmentLuckBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class LuckFragment : Fragment() {
 
     private var _binding: FragmentLuckBinding? = null
     private val binding get() = _binding!!
+
+    private val luckViewModel by viewModels<LuckViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater,

@@ -12,10 +12,10 @@
         android:id="@+id/toolbar"
         android:layout_width="0dp"
         android:layout_height="?attr/actionBarSize"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:background="@color/primaryDark"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:layout_width="wrap_content"
@@ -23,12 +23,10 @@
             android:layout_gravity="center"
             android:fontFamily="@font/dancing_script_bold"
             android:text="@string/app_name"
-            android:textSize="24sp"
             android:textColor="@color/secondary"
-            />
+            android:textSize="20sp" />
 
-    </FrameLayout>
-
+    </Toolbar>
 
 
     <androidx.fragment.app.FragmentContainerView
@@ -40,21 +38,20 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:navGraph="@navigation/main_graph" />
 
 
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:layout_width="0dp"
-        android:background="@color/primaryDark"
         android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/button_menu"
+        android:background="@color/primaryDark"
         app:itemActiveIndicatorStyle="@color/transparent"
         app:itemIconTint="@color/button_nav_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/button_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
