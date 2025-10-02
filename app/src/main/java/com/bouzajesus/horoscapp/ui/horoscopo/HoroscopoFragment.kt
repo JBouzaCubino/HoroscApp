@@ -17,6 +17,26 @@ class HoroscopoFragment : Fragment() {
 
     private val horoscopeViewModel by viewModels<HoroscopeViewModel>()
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initUI()
+    }
+
+    private fun initUI() {
+        initUIState()
+    }
+
+    private fun initUIState() {
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED){
+                horoscopeViewModel.horoscope.collect{ list ->
+                    Log.d("Horoscope", list.joinToString())
+                }
+            }
+
+        }
+    }
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
