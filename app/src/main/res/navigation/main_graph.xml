@@ -7,9 +7,17 @@
 
     <fragment
         android:id="@+id/horoscopoFragment"
-        android:name="com.bouzajesus.horoscapp.ui.horoscopo.HoroscopoFragment"
+        android:name="com.bouzajesus.horoscapp.ui.horoscopo.HoroscopeFragment"
         android:label="fragment_horoscopo"
-        tools:layout="@layout/fragment_horoscopo" />
+        tools:layout="@layout/fragment_horoscopo" >
+        <action
+            android:id="@+id/action_horoscopoFragment_to_horoscopeDetailActivity"
+            app:destination="@id/horoscopeDetailActivity"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
     <fragment
         android:id="@+id/luckFragment"
         android:name="com.bouzajesus.horoscapp.ui.luck.LuckFragment"
@@ -20,4 +28,13 @@
         android:name="com.bouzajesus.horoscapp.ui.palmistry.PalmistryFragment"
         android:label="fragment_palmistry"
         tools:layout="@layout/fragment_palmistry" />
+    <activity
+        android:id="@+id/horoscopeDetailActivity"
+        android:name="com.bouzajesus.horoscapp.ui.detail.HoroscopeDetailActivity"
+        android:label="activity_horoscope_detail"
+        tools:layout="@layout/activity_horoscope_detail" >
+        <argument
+            android:name="type"
+            app:argType="com.bouzajesus.horoscapp.domain.HoroscopeModel" />
+    </activity>
 </navigation>
