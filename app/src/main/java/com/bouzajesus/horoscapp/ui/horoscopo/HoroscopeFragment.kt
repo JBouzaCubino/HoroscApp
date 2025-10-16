@@ -13,9 +13,9 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.bouzajesus.horoscapp.R
-import com.bouzajesus.horoscapp.data.HoroscopeInfo
+import com.bouzajesus.horoscapp.domain.model.HoroscopeInfo
 import com.bouzajesus.horoscapp.databinding.FragmentHoroscopoBinding
-import com.bouzajesus.horoscapp.domain.HoroscopeModel
+import com.bouzajesus.horoscapp.domain.model.HoroscopeModel
 import com.bouzajesus.horoscapp.ui.horoscopo.adapter.HoroscopeAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch

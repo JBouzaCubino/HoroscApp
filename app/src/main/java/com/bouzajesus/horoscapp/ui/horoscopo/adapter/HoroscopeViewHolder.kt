@@ -7,7 +7,7 @@ import androidx.core.content.ContextCompat.getString
 import androidx.core.graphics.rotationMatrix
 import androidx.recyclerview.widget.RecyclerView
 import com.bouzajesus.horoscapp.R
-import com.bouzajesus.horoscapp.data.HoroscopeInfo
+import com.bouzajesus.horoscapp.domain.model.HoroscopeInfo
 import com.bouzajesus.horoscapp.databinding.ItemHoroscopeBinding
 
 class HoroscopeViewHolder(view: View): RecyclerView.ViewHolder(view) {

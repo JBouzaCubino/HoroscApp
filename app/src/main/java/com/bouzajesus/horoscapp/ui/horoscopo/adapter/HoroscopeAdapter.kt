@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bouzajesus.horoscapp.R
-import com.bouzajesus.horoscapp.data.HoroscopeInfo
+import com.bouzajesus.horoscapp.domain.model.HoroscopeInfo
 
 class HoroscopeAdapter(
     private var horoscopeList: List<HoroscopeInfo> = emptyList(),

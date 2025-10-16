@@ -1,4 +1,4 @@
-package com.bouzajesus.horoscapp.domain
+package com.bouzajesus.horoscapp.domain.model
 
 enum class HoroscopeModel {
     Aries,

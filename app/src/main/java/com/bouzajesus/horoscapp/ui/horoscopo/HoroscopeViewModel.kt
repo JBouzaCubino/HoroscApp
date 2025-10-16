@@ -1,8 +1,8 @@
 package com.bouzajesus.horoscapp.ui.horoscopo
 
 import androidx.lifecycle.ViewModel
-import com.bouzajesus.horoscapp.data.HoroscopeInfo
-import com.bouzajesus.horoscapp.data.HoroscopeInfo.*
+import com.bouzajesus.horoscapp.domain.model.HoroscopeInfo
+import com.bouzajesus.horoscapp.domain.model.HoroscopeInfo.*
 import com.bouzajesus.horoscapp.data.provider.HoroscopeProvider
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow

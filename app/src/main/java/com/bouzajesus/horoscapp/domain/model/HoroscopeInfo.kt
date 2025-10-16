@@ -1,4 +1,4 @@
-package com.bouzajesus.horoscapp.data
+package com.bouzajesus.horoscapp.domain.model
 
 import com.bouzajesus.horoscapp.R
 

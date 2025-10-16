@@ -1,7 +1,7 @@
 package com.bouzajesus.horoscapp.data.provider
 
-import com.bouzajesus.horoscapp.data.HoroscopeInfo
-import com.bouzajesus.horoscapp.data.HoroscopeInfo.*
+import com.bouzajesus.horoscapp.domain.model.HoroscopeInfo
+import com.bouzajesus.horoscapp.domain.model.HoroscopeInfo.*
 import jakarta.inject.Inject
 
 class HoroscopeProvider @Inject constructor() {

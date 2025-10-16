@@ -35,6 +35,6 @@
         tools:layout="@layout/activity_horoscope_detail" >
         <argument
             android:name="type"
-            app:argType="com.bouzajesus.horoscapp.domain.HoroscopeModel" />
+            app:argType="com.bouzajesus.horoscapp.domain.model.HoroscopeModel" />
     </activity>
 </navigation>

@@ -41,6 +41,8 @@
         tools:text="ñalskdjfñl a ñsldkfj ñlaskdjf asldk falsñdf ñlaskjdflaskñdfj añlsdkjf ñlaskj" />
 
     <ProgressBar
+        android:id="@+id/pbLoading"
+        android:visibility="invisible"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:indeterminateTint="@color/gold"
@@ -50,6 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
 
     <ImageButton
+        android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="?attr/selectableItemBackgroundBorderless"
