@@ -2,6 +2,7 @@ package com.bouzajesus.horoscapp.ui.detail
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.bouzajesus.horoscapp.domain.model.HoroscopeModel
 import com.bouzajesus.horoscapp.domain.usecases.GetPredictionUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import jakarta.inject.Inject
@@ -17,17 +18,20 @@ class HoroscopeDetailViewModel @Inject constructor(private val getPredictionUseC
     private var _state = MutableStateFlow<HoroscopeDetailState>(HoroscopeDetailState.Laoding)
     val state: StateFlow<HoroscopeDetailState> = _state
 
-    fun getHoroscope(sign: String){
+    lateinit var horoscope: HoroscopeModel
+
+    fun getHoroscope(sign: HoroscopeModel){
+        horoscope = sign
         viewModelScope.launch {
             _state.value = HoroscopeDetailState.Laoding
             val predictionModel = withContext(Dispatchers.IO){
-                getPredictionUseCase.execute(sign)
+                getPredictionUseCase.execute(sign.name)
             }
             if(predictionModel == null){
                 _state.value = HoroscopeDetailState.Error("Ha ocurrido un error.")
             }
             else{
-                _state.value = HoroscopeDetailState.Success(predictionModel.horoscope, predictionModel.sign)
+                _state.value = HoroscopeDetailState.Success(predictionModel.horoscope, predictionModel.sign, horoscope)
             }
 
         }
