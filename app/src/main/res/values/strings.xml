@@ -58,4 +58,5 @@
     <string name="luck_31">"A surprising twist of fate will bring unexpected blessings."</string>
     <string name="btnBack">Botón atrás</string>
     <string name="card_roulette">Card roulette</string>
+    <string name="card_extracted">Card extracted</string>
 </resources>

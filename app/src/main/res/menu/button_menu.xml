@@ -7,12 +7,12 @@
         android:icon="@drawable/ic_horoscope"/>
 
     <item
-        android:id="@+id/palmistryFragment"
-        android:title="@string/palmistry"
-        android:icon="@drawable/ic_palmistry"/>
-
-    <item
         android:id="@+id/luckFragment"
         android:title="@string/luck"
         android:icon="@drawable/ic_luck"/>
+
+    <item
+        android:id="@+id/palmistryFragment"
+        android:title="@string/palmistry"
+        android:icon="@drawable/ic_palmistry"/>
 </menu>
