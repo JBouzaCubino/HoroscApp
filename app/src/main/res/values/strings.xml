@@ -24,6 +24,7 @@
     <!--    Luck-->
     <string name="share">Share</string>
 
+    <!--    Predictions-->
     <string name="luck_0">"A new opportunity will bring unexpected success your way."</string>
     <string name="luck_1">"You'll meet someone who will change your life for the better."</string>
     <string name="luck_2">"An exciting journey awaits you in the near future."</string>
@@ -49,14 +50,18 @@
     <string name="luck_22">"A period of personal growth and self-discovery is on the horizon."</string>
     <string name="luck_23">"You'll find inspiration in the most unlikely of places."</string>
     <string name="luck_24">"A new friendship will bring laughter and joy into your life."</string>
-    <string name="luck_25">"Suscríbete a AristiDevs en Youtube."</string>
+    <string name="luck_25">"Your determination will lead to a brighter future."</string>
     <string name="luck_26">"An important decision will lead to a brighter future."</string>
     <string name="luck_27">"A long-held wish will finally manifest itself."</string>
     <string name="luck_28">"You'll discover a new passion that ignites your soul."</string>
     <string name="luck_29">"A challenge you face now will become a stepping stone to success."</string>
     <string name="luck_30">"Unexpected travel plans will broaden your horizons."</string>
     <string name="luck_31">"A surprising twist of fate will bring unexpected blessings."</string>
+
+
     <string name="btnBack">Botón atrás</string>
     <string name="card_roulette">Card roulette</string>
     <string name="card_extracted">Card extracted</string>
+    <string name="error">Error</string>
+    <string name="lucky_card">Lucky card</string>
 </resources>
