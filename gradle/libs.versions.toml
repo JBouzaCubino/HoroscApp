@@ -1,5 +1,6 @@
 [versions]
-agp = "8.9.3"
+agp = "8.13.0"
+cameraX = "1.5.1"
 kotlin = "2.2.20"
 ksp = "2.2.20-2.0.3"
 daggerhiltVersion = "2.57.2"
@@ -17,6 +18,11 @@ retrofit = "3.0.0"
 safeArgs = "2.9.5"
 
 [libraries]
+androidx-camera-core = { module = "androidx.camera:camera-core", version.ref = "cameraX" }
+androidx-camera-extensions = { module = "androidx.camera:camera-extensions", version.ref = "cameraX" }
+androidx-camera-view = { module = "androidx.camera:camera-view", version.ref = "cameraX" }
+androidx-camera-lifecycle = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraX" }
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraX" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
