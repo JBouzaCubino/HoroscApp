@@ -1,6 +1,7 @@
 package com.bouzajesus.horoscapp.ui.detail
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
@@ -43,7 +44,7 @@ class HoroscopeDetailActivity : AppCompatActivity() {
         lifecycleScope.launch {
             horoscopeDetailViewModel.state.collect { state ->
                 when (state) {
-                    is HoroscopeDetailState.Error -> errorState()
+                    is HoroscopeDetailState.Error -> errorState(state.error)
                     HoroscopeDetailState.Laoding -> loadingState()
                     is HoroscopeDetailState.Success -> successState(state)
                 }
@@ -78,7 +79,8 @@ class HoroscopeDetailActivity : AppCompatActivity() {
         binding.ivDetail.setImageResource(image)
     }
 
-    private fun errorState(){
+    private fun errorState(error: String) {
         binding.pbLoading.isVisible = false
+        Toast.makeText(this, "Ha ocurrido un error: $error", Toast.LENGTH_SHORT).show()
     }
 }
