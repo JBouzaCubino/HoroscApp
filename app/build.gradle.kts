@@ -31,7 +31,7 @@ android {
             resValue("string", "app_name", "\"HoroscApp\"")
         }
         debug {
-            buildConfigField("String", "BASE_URL", "\"https://newastro-debug.vercel.app\"")
+            buildConfigField("String", "BASE_URL", "\"https://newastro.vercel.app\"")
             resValue("string", "app_name", "\"[DEBUG]HoroscApp\"")
         }
     }
